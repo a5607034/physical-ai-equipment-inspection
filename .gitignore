@@ -1,0 +1,58 @@
+# ROS2 / colcon
+build/
+install/
+log/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secret*.json
+
+# Runtime outputs
+data/captures/
+data/reports/
+data/inspection_results.jsonl
+data/.inspection_report_baseline.json
+
+# Large recordings / generated logs
+*.mkv
+*.mp4
+*.webm
+*.bag
+*.db3
+*.mcap
+*.log
+
+# OS and editors
+.DS_Store
+.vscode/
+.idea/
+*~
+*.swp
+
+# Backups
+*.bak
+*.orig
+
+# Unused ROS 2 tutorial files
+src/my_robot_bringup/config/catch_them_all_config.yaml
+src/my_robot_bringup/config/number_app.yaml
+src/my_robot_bringup/config/radio_config.yaml
+src/my_robot_bringup/launch/number_app*
+src/my_robot_bringup/launch/radio.launch.xml
+src/my_robot_bringup/launch/turtlesim_catch_them_all.launch.xml
+
+# Unused template tests
+src/my_py_pkg/test/
